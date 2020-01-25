@@ -1,0 +1,18 @@
+{
+  "name": "meetwebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "注释": "//    手动添加build属性，对应webpack值，psjson最后一个属性后面不能加逗号",
+    "注释1": "//  再使用 npm run build 进行调用打包",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "注释2": "//  下面是开发时依赖",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}

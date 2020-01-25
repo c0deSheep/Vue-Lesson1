@@ -1,0 +1,38 @@
+{
+  "name": "meetwebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "注释": "//    手动添加build属性，对应webpack值，psjson最后一个属性后面不能加逗号",
+    "注释1": "//  再使用 npm run build 进行调用打包",
+    "注释3": "// 合并js文件，需要将build指向原本的webpack-config.js指向到现在这prod.js,同样将dev也如此",
+    "build": "webpack --config ./build/prod.config.js",
+    "dev": "webpack-dev-server --open --config ./build/dev.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "注释2": "//  下面是开发时依赖",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.6.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "style-loader": "^1.1.3",
+    "url-loader": "^3.0.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^13.0.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
