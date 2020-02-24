@@ -1,0 +1,10 @@
+html,body {
+  background:url("../images/140238-105.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+ul li {
+  list-style: none;
+}
+

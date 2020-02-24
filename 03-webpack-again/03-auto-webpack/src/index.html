@@ -1,0 +1,30 @@
+<!--本节是基于webpack@3.6.0-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--不推荐在入口的html中引入任何的包和css文件，而是放到main.js中-->
+  <!--<script src="main.js"></script>-->
+
+  <!--但是由于main.js中有用到es6的语法，所有不能与node兼容使用，需要使用webpack打包兼容导出dist中的bundle.js,这才是使用的版本-->
+  <!--<script src="../dist/bundle.js"></script>-->
+  <!--<script src="/bundle.js"></script>-->
+
+
+  <!--当使用了 html-webpack-plugin后，不再需要手动引用bundle.js路径，因为这个插件会自动创建一个合适的 script，并且引用了正确的路径-->
+</head>
+<body>
+<ul>
+  <li>{这是第1个li} </li>
+  <li>{这是第2个li} </li>
+  <li>{这是第4个li} </li>
+  <li>{这是第5个li} </li>
+  <li>{这是第6个li} </li>
+  <li>{这是第7个li} </li>
+  <li>{这是第8个li} </li>
+  <li>{这是第9个li} </li>
+  <li>{这是第10个li} </li>
+</ul>
+</body>
+</html>
